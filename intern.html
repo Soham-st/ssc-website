@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSC - Smart Productivity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0f172a; color: #fff; }header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 10%; background: rgba(255,255,255,0.05);
+  position: sticky; top: 0; backdrop-filter: blur(10px);
+}
+
+header h1 { font-size: 24px; }
+nav a {
+  margin: 0 15px; text-decoration: none; color: #ddd;
+  transition: 0.3s;
+}
+nav a:hover { color: #38bdf8; }
+
+.hero {
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; padding: 60px 10%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 42px; margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 25px; color: #cbd5f5;
+}
+
+.btn {
+  padding: 12px 25px; border: none;
+  background: linear-gradient(45deg, #38bdf8, #6366f1);
+  color: white; border-radius: 30px;
+  cursor: pointer; font-weight: 600;
+}
+
+.hero img {
+  width: 400px; max-width: 100%;
+}
+
+.features {
+  padding: 60px 10%; text-align: center;
+}
+
+.features h2 { margin-bottom: 40px; }
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px; border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.1);
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 10%;
+  background: linear-gradient(45deg, #1e293b, #0f172a);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; }
+  .hero-text h2 { font-size: 32px; }
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>SSC</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero">
+  <div class="hero-text">
+    <h2>Boost Your Productivity</h2>
+    <p>SSC helps you organize tasks, automate workflows, and achieve more in less time using cutting-edge AI tools.</p>
+    <button class="btn">Get Started</button>
+  </div>
+</section><section id="features" class="features">
+  <h2>Features</h2>
+  <div class="feature-grid">
+    <div class="card">
+      <h3>AI Automation</h3>
+      <p>Automate repetitive tasks and focus on what matters most.</p>
+    </div>
+    <div class="card">
+      <h3>Smart Analytics</h3>
+      <p>Track your performance with real-time insights.</p>
+    </div>
+    <div class="card">
+      <h3>Cloud Sync</h3>
+      <p>Access your data anytime, anywhere.</p>
+    </div>
+  </div>
+</section><section class="cta">
+  <h2>Ready to Level Up?</h2>
+  <p>Join thousands of users already using SSC.</p>
+  <button class="btn">Sign Up Now</button>
+</section><footer>
+  <p>© 2026 SSC. All rights reserved.</p>
+</footer></body>
+</html>
